@@ -1,0 +1,12 @@
+.error404{
+    display: grid;
+    height: 80vh;
+    width: 100vw;
+    place-items: center;
+}
+.error404 h1{
+    text-align: center;
+}
+.error404 a{
+    color: var(--dark-accent-color);
+}

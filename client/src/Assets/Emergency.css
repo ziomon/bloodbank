@@ -1,0 +1,15 @@
+.emergencyBanner{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 1em 0;
+    background-color: var(--yellow-color);
+}
+.emergencyBanner h3 {
+    text-align: center;
+}
+.emergencyBanner a{
+    text-decoration: 3px solid black !important;
+}

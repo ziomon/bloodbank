@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding :0;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --dark-accent-color : #D14D72;
+    --light-accent-color : #FFABAB;
+    --primary-color : #FEF2F4;
+    --secondary-color : #0E0E0E;
+    --green-color : #378C78;
+    --yellow-color : #EBD405;
+    --white-color : #f4f4f4;
+}
+::-webkit-scrollbar {
+    width: 0em;
+  }
+
+body{
+    overflow-y: scroll;  
+    margin : 0;
+    padding: 0;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: var(--primary-color);
+    /* overflow-x: hidden; */
+}
+.boldText{
+    font-weight: bold;
+}
+.regularText{
+    font-weight: normal;
+}
+.whiteText {
+    color: var(--white-color) ;
+}
+.blackText{
+    color: var(--secondary-color);
+}
+.primaryButton{
+    background-color:var(--dark-accent-color);
+    border:none;
+    padding:.5em 1em;
+    border-radius: .25em;
+    width: fit-content;
+    font-weight: bold;
+    color: var(--white-color);
+}.primaryButton-invert{
+    background-color:var(--light-accent-color);
+    border:none;
+    padding:.5em 1em;
+    border-radius: .25em;
+    width: fit-content;
+    font-weight: bold;
+    color: var(--black-color);
+}
+.primaryButton-light{
+    background-color:var(--white-color);
+    border:none;
+    padding:.5em 1em;
+    border-radius: .25em;
+    width: fit-content;
+    font-weight: bold;
+    color: var(--black-color);
+}
+.formContainer{
+    margin-top: 1em;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+.form{
+
+    width: min(750px,80vw);
+    width: 50vw;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    padding: 3em;
+    border-radius: .5em;
+    margin-top: 2em;
+    
+}
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    /* padding:2em; */
+}
+.formGroup input,select{
+    border: none;
+    background-color: rgb(0, 0, 0,0);
+    color: rgb(0,0,0,0.8);
+    border-bottom: 5px solid var(--dark-accent-color);
+    padding: 2px;
+}
+.formGroup input:focus,select:focus{
+    border: none;
+    outline: none;
+    border-bottom: 5px solid var(--light-accent-color);
+    animation: changeColor .15s ease-in;
+}
+.formTitle{
+    margin-bottom: 2em;
+    align-self: center;
+}
+
+@keyframes changeColor {
+    0%{
+        border-color: var(--dark-accent-color);
+    }
+    100%{
+        border-color: var(--light-accent-color);
+    }
+}

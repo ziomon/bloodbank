@@ -1,0 +1,22 @@
+.searchResultsContainer{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+.searchResultsContainer>p{
+    margin: 2em 0em 0em 1em;
+    justify-self: left;
+}
+.searchResults{
+    display: flex;
+    flex-wrap: wrap;
+    margin : 2em 0;
+    width: 100%;
+    max-width: 950px;
+    background-color: var(--white-color);
+    min-height: 100vh;
+    border-radius: 1rem;
+    align-content: flex-start;
+    justify-content: center;
+    padding-bottom: 1em;
+}

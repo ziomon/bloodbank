@@ -1,0 +1,31 @@
+.floatingButtonContainer{
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    width: 100vw;
+    max-width: 800px;
+    /* margin-top: 1em; */
+    align-items: center;
+    /* justify-content: center; */
+}
+.floatingButtonContainer div{
+    /* align-self: center; */
+    justify-self: center;
+    height: 100%;
+    padding: .5em;
+    align-self: center;
+    width: fit-content;
+    min-width: 100%;
+    font-size: small;
+}
+.requestBlood{
+    background-color: var(--dark-accent-color);
+    color: var(--white-color);
+}
+
+.registerBlood{
+    background-color: var(--light-accent-color);
+}
+.donateMoney{
+    background-color: var(--green-color);
+}

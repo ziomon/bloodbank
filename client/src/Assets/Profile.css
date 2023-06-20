@@ -1,0 +1,37 @@
+.profileContainer{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    height: 100vh;
+}
+.profileCardDetails{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1em;
+    
+}
+.profileCard{
+    display: flex;
+    background-color: var(--white-color);
+    gap: 1em;
+    width: fit-content;
+    place-items: center;
+    padding : 1em .5em;
+    border-radius:.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.profileCardBlood{
+    font-size: 38pt;
+    place-self: center;
+    background-color: var(--dark-accent-color);
+    color: var(--white-color);
+    font-weight: bolder;
+    /* border-radius: 1em; */
+    height: 100%;
+    padding: .25em;
+}
+.profileCardName{
+    font-weight: bolder;
+}

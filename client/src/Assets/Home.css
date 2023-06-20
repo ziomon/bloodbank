@@ -1,0 +1,18 @@
+.homeContentContainer{
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+}
+.homeContent{
+    width: 50%;
+    line-height: 20pt;
+}
+.homeContent *{
+    margin: .25em 0;
+}
+.exploreButton{
+    background-color: var(--dark-accent-color);
+    width: fit-content;
+    padding: .5em;
+    border-radius:.25em;
+}

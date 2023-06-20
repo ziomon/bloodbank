@@ -1,0 +1,29 @@
+.footerContainer{
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        "quicklinks teams document"
+        "madeby madeby madeby";
+    justify-items: center;
+    background-color: var(--light-accent-color);
+    padding: 2em 0;
+}
+.footerContainer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.footerQuickLinks{
+    grid-area: quicklinks;
+}
+.footerProjectPeople{
+    grid-area: teams;
+}
+.footerDocumentationLink{
+    grid-area: document;
+}
+.footerMadeBy{
+    margin-top: 1em;
+    grid-area : madeby;
+}

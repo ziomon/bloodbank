@@ -1,0 +1,65 @@
+#searchTable{
+    margin-right:10px;
+}
+.tableContainer{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    margin-top:2em;
+}
+.tableHeading{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+    padding: .5em 0;
+}
+.tableData{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    /* gap :1em; */
+}
+.tableTitles{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap:1em;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 1em 0;
+}
+.tableRow{
+    display: flex;
+    justify-content: center;
+    padding: .5em .25em;
+    /* gap: 1em; */
+    width: 30rem;
+    justify-content: space-between;
+    background-color: rgb(249, 249, 249);
+    flex-wrap: wrap;
+}
+.tableRow:nth-of-type(even){
+    background-color: rgb(237, 237, 237);
+}
+.tableRowButton{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.tableViewButton:hover{
+    color: var(--green-color);
+}
+.tableDeleteButton:hover{
+    color: var(--dark-accent-color);
+}
+.tableRowBlood{
+    justify-self: center;
+    width: 2em;
+}
+.tableRowName{
+    width: 10em;
+}
+.tableRowProfile{
+    flex-basis: 100%;
+}
